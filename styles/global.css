@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    @apply bg-white text-black;
+}
+
+.leading-80 {
+    line-height: 80px;
+}
+
+/* .font-prata {
+    font-family: 'Prata', serif;
+} */
