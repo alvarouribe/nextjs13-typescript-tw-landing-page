@@ -10,6 +10,10 @@ html, body {
     line-height: 80px;
 }
 
+.logo {
+    min-width: 100px;
+}
+
 /* .font-prata {
     font-family: 'Prata', serif;
 } */
