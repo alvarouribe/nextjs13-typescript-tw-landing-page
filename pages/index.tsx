@@ -1,12 +1,16 @@
 import Image from 'next/image'
 import logo from '../public/images/bisu-logo.png'
 import instagramLogo from '../public/images/instagram-logo.svg'
+import DownloadPdf from '../components/DownloadPdf'
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-start sm:justify-center h-screen m-10">
       <div className='p-10 m-1'>
         <Image className="logo" src={logo} alt="Logo bisu" width={300} height={300} quality="100" />
+      </div>
+      <div className='text-center'>
+        <DownloadPdf href={'public/files/catalogo-bisu-2023.pdf'}>Descarga el catalogo acá</DownloadPdf>
       </div>
       <div className='m-6'>
         <a className='leading-6' href='https://www.instagram.com/bisu_joyas/' target='_blank' rel="noreferrer">
