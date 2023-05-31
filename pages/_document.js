@@ -16,7 +16,7 @@ export default function Document() {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-XXXX');
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
           `}
         </Script>
       <body>
@@ -24,7 +24,7 @@ export default function Document() {
         <NextScript />
         <noscript
           dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/gtag/js?id=G-XXXX" height="0" width="0" style="display: none; visibility: hidden;" />`,
+            __html: `<iframe src="https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}" height="0" width="0" style="display: none; visibility: hidden;" />`,
           }}
         />
       </body>
